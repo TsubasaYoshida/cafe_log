@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  web:
+    container_name: "codeigniter-local"
+    image: php:7.2-apache
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "80:80"
+
+  db:
+    container_name: "mysql-local"
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: cafe_log
+    volumes:
+      - ./db/mysql_data:/var/lib/mysql
