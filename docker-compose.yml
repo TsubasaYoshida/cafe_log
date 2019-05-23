@@ -1,12 +1,11 @@
 version: "3"
 
 services:
-  web:
+  php:
+    build: ./php
     container_name: "codeigniter-local"
-    image: php:7.2-apache
-    working_dir: /var/www/html
     volumes:
-      - ./:/var/www/html
+      - ./php:/var/www/html
     ports:
       - "80:80"
 
