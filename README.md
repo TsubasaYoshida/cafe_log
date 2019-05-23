@@ -11,6 +11,6 @@ $ docker-compose build
 $ docker-compose up -d
 ```
 
-2. [http://localhost/](http://localhost/)にアクセス
+2. [http://localhost/](http://localhost/) にアクセス
 
 3. `Welcome to CodeIgniter!` が表示されていれば、構築完了です。
