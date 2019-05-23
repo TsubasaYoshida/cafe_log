@@ -1,4 +1,4 @@
-# Docker&CodeIgniter学習用アプリケーション（カフェ情報まとめサイト）
+# Docker&CodeIgniter学習用アプリケーション<br>（カフェ情報まとめサイト）
 
 ## ローカル環境構築手順
 
